@@ -11,7 +11,7 @@ Built to uncover what drives campaign success — and what killed it in early 20
 |---|---|
 | Dataset | Kickstarter Campaigns (364,378 rows) |
 | Tools | MySQL, Tableau |
-| Tables | `project_1`, `category`, `creator`, `location`, `date` |
+| Tables | `project_1`, `category`, `creator`, `location` |
 | Dashboards | 3 (Platform Overview, Funding Intelligence, Engagement & Goal Strategy) |
 
 ---
@@ -45,13 +45,13 @@ crowdfunding-analysis/
 The project uses a **star schema** with `project_1` as the fact table:
 
 - **project_1** — core campaign data (id, state, usd_pledged, backers_count, goal, dates)
-- (📂 Sample dataset included (1000 rows). Full dataset available on Kaggle — search "Kickstarter Campaigns".
+- 📂 Sample dataset included (1000 rows). Full dataset available on Kaggle — search "Kickstarter Campaigns".
 - **category** — campaign category lookup
 - **creator** — campaign creator details
 - **location** — geographic data
-- **date** — date dimension table (year, month, quarter)
 
-Foreign keys and indexes created on `creator_id`, `location_id`, `category_id`, `created_date`.
+
+Foreign keys and indexes created on `creator_id`, `location_id`, `category_id`.
 
 ---
 
