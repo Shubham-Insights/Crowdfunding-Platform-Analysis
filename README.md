@@ -45,6 +45,7 @@ crowdfunding-analysis/
 The project uses a **star schema** with `project_1` as the fact table:
 
 - **project_1** — core campaign data (id, state, usd_pledged, backers_count, goal, dates)
+- (📂 Sample dataset included (1000 rows). Full dataset available on Kaggle — search "Kickstarter Campaigns".
 - **category** — campaign category lookup
 - **creator** — campaign creator details
 - **location** — geographic data
